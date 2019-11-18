@@ -1,0 +1,24 @@
+#content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+#content>*{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: .1rem;
+    padding: .25rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transition: all .2s ease-in-out;
+    background-color: rgba(255,255,255,0);
+}
+#content>.entry:hover{
+    background-color: rgba(255,255,255,.2);
+}
+.title{
+    font-weight: bolder;
+}

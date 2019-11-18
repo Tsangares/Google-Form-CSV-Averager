@@ -1,0 +1,21 @@
+@media screen and (min-aspect-ratio: 13/9) {
+    /*landscape*/
+    html,body{
+	font-size: 3vmin;    
+    }
+}
+@media screen and (max-aspect-ratio: 13/9) {
+    /*portrait*/
+    html,body{
+	font-size: 4vmin;    
+    }
+}
+
+html, body {
+    height: 100%;
+    background-color: #3b3c36;
+    color: white;
+    font-family: Lato;
+    margin: 0;
+    padding: 0;
+}

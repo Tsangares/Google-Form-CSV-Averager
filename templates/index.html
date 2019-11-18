@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Inconsolata|Lato&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/index.css">
+    <link rel="stylesheet" type="text/css" href="/static/graphics.css">
+  </head>
+  <body>
+    <div id="content">
+      <div>
+	<span class="title">Demo Instructions</span>
+	<span>
+	  Download an example csv file.<br>
+	  Click browse and select the csv file to upload.<br>
+	  Click "View Stats" button.
+	</span>
+      </div>
+      <form action='/stats' method='post' enctype="multipart/form-data">
+	<input type='file' name='csv' title="Select CSV">
+	<input type='submit' value="View Stats">
+      </form>
+    </div>
+  </body>
+</html>

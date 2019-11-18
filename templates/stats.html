@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Inconsolata|Lato&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/stats.css">
+    <link rel="stylesheet" type="text/css" href="/static/graphics.css">
+  </head>
+  <body>
+    <div id="content">
+      <div>
+	<span class="key title">Description</span>
+	<span class="val title">Mean Value</span>
+      </div>
+      {% for key,val in numerical.items() %}
+      <div class="entry">
+	{%if(key.__len__()>100)%}
+	<span class="key" title="{{key}}">{{key[:100]}}...</span>
+	{% else %}
+	<span class="key">{{key}}</span>
+	{% endif %}
+	<span class="val">{{val}}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
