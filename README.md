@@ -23,6 +23,6 @@ Then run the following to download the dependencies:
 
 Then start the server:
 
-   python server.py
+    python server.py
    
 Then you can visit the URL http://localhost:6065 to interact with the application.
